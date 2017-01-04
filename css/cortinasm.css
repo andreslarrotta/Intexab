@@ -1,0 +1,560 @@
+@font-face {
+  font-family: 'Champagne & Limousines';
+  src: url("fonts/Champagne & Limousines.ttf");
+  font-weight: normal;
+  font-style: normal; }
+  @font-face {
+  font-family: 'Arabella';
+  src: url("fonts/anabella/Arabella.ttf");
+  font-weight: normal;
+  font-style: normal; }
+      @font-face {
+  font-family: 'Lauren';
+  src: url("fonts/lauren/LaurenScript.ttf");
+  font-weight: normal;
+  font-style: normal; }
+  @font-face {
+  font-family: 'sansation';
+  src: url("fonts/sansation/Sansation_Bold.ttf");
+  font-weight: normal;
+  font-style: normal; }
+  @font-face {
+  font-family: 'Sansation_Light';
+  src: url("fonts/sansation/Sansation_Light.ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+body{
+	font-family: 'Champagne & Limousines';
+}
+h1 {
+  font-family: 'Champagne & Limousines';
+  text-align: center;
+  padding-top: 34%;
+  font-size: 4.8rem;
+  color: rgb(255, 255, 255);
+  z-index: 99;
+}
+h2 {
+  font-family: 'Champagne & Limousines';
+  text-align: center;
+  font-size: 4.8rem;
+  color: rgb(255, 255, 255);
+  z-index: 99;
+  margin-top: 0;
+}
+h3{
+	font-family: 'Champagne & Limousines';
+}
+p {
+  padding: 147px 132px 0 60px;
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 22px;
+  margin-bottom: 1.25rem;
+}
+/*///////////////header*/
+/**
+ * Design Shack Respnsive Menu
+ */
+
+
+* {
+  padding: 0;
+  margin: 0;
+  
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  z-index: 99999999;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+}
+li {
+  font-size: 19px;
+  padding: 0;
+  margin: 0;
+  line-height: 26px;
+}
+nav li a {
+  background: #FFF;
+  border-right: 1px solid #fff;
+  color: #000;
+  display: block;
+  float: left;
+  font-family: 'sansation';
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 16%;
+  height: 76px;
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  -ms-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+/*HOVER*/
+nav li a:hover {
+  background: rgba(0, 0, 0, 0.49);
+  color: white;
+}
+
+/*SMALL*/
+nav small {
+font-family: 'sansation';
+  text-transform: none;
+
+}
+
+/*BORDER FIX*/
+nav li:last-child a {
+  border: none;
+}
+
+/*BLUE MENU*/
+nav .blue {
+  margin-top: 50px;
+}
+
+.blue li a {
+  background: rgba(0, 0, 0, 0.49);
+}
+}
+
+.blue small {
+  color: white;
+}
+
+.blue li a:hover {
+  background: #444;
+}
+
+/*RED MENU*/
+
+nav .red {
+  margin-top: 50px;
+}
+
+.red li a {
+  background: #5C0002;
+}
+
+.red small {
+  color: white;
+}
+
+.red li a:hover {
+  background: rgba(0, 0, 0, 0.49);
+}
+}
+
+/* MEDIA QUERIES*/
+@media only screen and (max-width : 1220px),
+only screen and (max-device-width : 1220px){
+  nav li a {
+    font-family: 'sansation';
+  }
+  
+  nav small {
+    font-family: 'sansation';
+  }
+}
+
+@media only screen and (max-width : 930px),
+only screen and (max-device-width : 930px){
+  nav li a {
+    width: 16%;
+    border-bottom: 1px solid #fff;
+   font-family: 'sansation';
+  }
+  
+  nav li:last-child a, nav li:nth-child(4) a {
+    border-right: none;
+  }
+  
+  nav li:nth-child(5) a, nav li:nth-child(6) a, nav li:nth-child(7) a, nav li:nth-child(8) a {
+    border-bottom: none;
+  }
+  nav small {
+ font-family: 'sansation';
+  text-transform: none;
+  font-size: 11px;
+}
+}
+
+@media only screen and (max-width : 580px),
+only screen and (max-device-width : 580px){
+  nav {
+  width: 100%;
+  position: relative;
+  z-index: 99999999;
+  overflow: hidden;
+}
+  nav li a {
+      width: 100%;
+      font-family: 'sansation';
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  #menu3{
+    width: 100%;
+  }
+  #menu7{
+    display: none;
+  }
+  
+  nav li:nth-child(even) a {
+    border-right: none;
+  }
+  
+  nav li:nth-child(5) a, nav li:nth-child(6) a {
+    border-bottom: 1px solid #fff;
+  }
+  h1 {
+  font-family: 'Champagne & Limousines';
+  text-align: center;
+  padding-top: 34%;
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  /* z-index: 99; */
+}
+h2 {
+  font-family: 'Champagne & Limousines';
+  text-align: center;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  z-index: 99;
+  /* margin-top: 0; */
+}
+}
+
+@media only screen and (max-width : 320px),
+only screen and (max-device-width : 320px){
+  nav li a {
+     font-family: 'Lauren';
+  }
+}
+
+/*/////////////////////////header*/
+.mainSeccion {
+  width: 100%;
+  margin: 0 auto;
+
+}	
+.background {
+  /* width: 100%; */
+  height: 100%;
+  /* right: 0; */
+  width: 100%;
+  /* position: relative; */
+}
+
+
+/*SECCION HOME*/
+
+#producto1 {
+  width: 100%;
+  background: url(../img/silhouettse.jpg) center center no-repeat fixed;
+  background-size: 100% 100%;
+  height: 100%;
+}
+#producto1 img{
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.imagesprod {
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: relative;
+  z-index: -1;
+  float: right;
+  height: 540px;
+}
+.horizontal {
+  /* background: rgb(248, 214, 78); */
+  width: 100%;
+  float: left;
+}
+.vertical{
+  width: 50%;
+  float: left;
+}
+#triangulos {
+  background: url(../img/triangulosp.png) center center no-repeat;
+  /* position: absolute; */
+}
+.title {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+  right: 0;
+}
+.produc {
+ width: 75%;
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+  right: 0;
+}
+#titulo1 {
+  width: 100%;
+  background: url(../img/productos_cortinas.png) center center no-repeat fixed;
+  background-size: 100% 100%;
+  height: 100%;
+}
+#titulo2 {
+  width: 100%;
+  background: url(../img/productos_paneles.png) center center no-repeat fixed;
+  background-size: 100% 100%;
+  height: 100%;
+}
+
+/*//////////////////////// SECCION 2 /////////////////////*/
+.seccionx2{
+	width: 100%;
+	height: 820px;
+}
+.listadeproductos {
+	font-family: 'Lauren';
+ background: rgba(240, 208, 42, 0.85);
+  width: 25%;
+  height: 100%;
+  padding: 96px 0 0 46px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+#flecha{
+  margin-right: 22px;
+}
+/*/////////////////////// /SECCION PRODUCTOS /////////////////////*/
+#producto1 {
+  width: 100%;
+  background: url(../img/silhouettse.jpg) center center no-repeat fixed;
+  background-size: 100% 100%;
+ height: 1620px;
+}
+#producto1 img {
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: relative;
+  z-index: -1;
+  float: right;
+  /* height: 540px; */
+}
+
+/*/////////////////////DESCRIPCION/////////////////////*/
+.listadeproductos a {
+  text-decoration: none;
+  width: 30pxrtoext-align:center;
+
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(#cdd4dc,0),color-stop(#959ca4,1));
+
+  background: -moz-linear-gradient(top, #cdd4dc 0%, #959ca4 100%);
+  background: -o-linear-gradient(top, #cdd4dc 0%, #959ca4 100%);
+  background: linear-gradient(top, #cdd4dc 0%, #959ca4 100%);
+
+  background: -moz-linear-gradient(top, #cdd4dc 0%,#959ca4 100%);
+  background: -o-linear-gradient(top, #cdd4dc 0%,#959ca4 100%);
+  background: linear-gradient(top, #cdd4dc 0%,#959ca4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdd4dc', endColorstr='#959ca4',GradientType=0 );
+
+  -moz-border-radius: 3px;
+
+}
+.listadeproductos a:hover {
+    /*box-shadow*/
+    -webkit-box-shadow: 0 0 10px #999;
+    -moz-box-shadow: 0 0 10px #999;
+    box-shadow: 0 0 10px #999;
+}
+.listadeproductos a:active { border: 0.1em solid #999 }
+.link {
+
+}
+.toolTip {
+	 font-family: 'Champagne & Limousines';
+  position: fixed;
+  display: none;
+  left: 28%;
+  top: 17%;
+  background: rgba(224, 196, 53, 1);
+  color: #000;
+  padding: 27px 10px;
+  width: 40%;
+  -webkit-animation: fade 1s ease;
+  -moz-animation: fade 1s ease;
+  -ms-animation: fade 1s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  font-weight: lighter;
+  border: solid 0px rgba(223, 196, 51, 1);
+}
+.listadeproductos a:hover ~ .toolTip {
+    display:inline-block;
+    margin-left: 30px;
+    margin-top: -50px;
+    /*transition*/
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.listadeproductos a:active ~ .toolTip {
+    margin-left: 25px;
+    /*transition*/
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.toolTip:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 14px solid transparent;
+  border-right: 28px dotted rgba(223, 196, 53, 1);
+  border-bottom: 14px dotted transparent;
+  margin: -5px -38px;
+}
+
+/* First, create the keyframes behavior */
+@-webkit-keyframes fade {
+	0%   { opacity: 0; margin-left:0px; }
+	100% { opacity: 1; margin-left:30px;}
+}
+@-moz-keyframes fade {
+	0%   { opacity: 0; margin-left:0px; }	
+	100% { opacity: 1; margin-left:30px;}
+}
+@-ms-keyframes fade {
+	0%   { opacity: 0; margin-left:0px; }	
+	100% { opacity: 1; margin-left:30px;}
+}
+
+
+/*////////////////////segundasjdnacpjsdbvs;BDJV;sdjvbas;djvbas*/
+.listadeproductos a:active { border: 0.1em solid #999 }
+.link2 {
+
+}
+.toolTip2 {
+	 font-family: 'Champagne & Limousines';
+  position: fixed;
+  display: none;
+  left: 28%;
+  top: 17%;
+  background: rgba(224, 196, 53, 1);
+  color: #000;
+  padding: 27px 10px;
+width: 40%;
+  -webkit-animation: fade 1s ease;
+  -moz-animation: fade 1s ease;
+  -ms-animation: fade 1s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  font-weight: lighter;
+  border: solid 0px rgba(223, 196, 51, 1);
+}
+.listadeproductos a:hover ~ .toolTip2 {
+    display:inline-block;
+    margin-left: 30px;
+    margin-top: -50px;
+    /*transition*/
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.listadeproductos a:active ~ .toolTip2 {
+    margin-left: 25px;
+    /*transition*/
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.toolTip2:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 14px solid transparent;
+  border-right: 28px dotted rgba(223, 196, 53, 1);
+  border-bottom: 14px dotted transparent;
+  margin: -5px -38px;
+}
+
+/* Then apply your animation to the element */
+span:hover{
+     -webkit-animation: fade 1s ease;
+     -moz-animation:   fade 1s ease;
+     -ms-animation:   fade 1s ease;
+}
+/*//////////////////////////////*/
+
+/*////////////////////////////	REDES SOCIALES*/
+#redessociales {
+  position: fixed;
+  width: 26%;
+  left: 24px;
+  bottom: 45px;
+}
+#redessociales img{
+	  width: 14%;
+}
+@media screen and (max-width : 580px){
+#titulo1 {
+  width: 100%;
+  background: url(../img/productos_cortinas.png) center center no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+}
+#producto1 {
+  width: 100%;
+  background: url(../img/silhouettse.jpg) center center no-repeat fixed;
+  background-size: 100% 100%;
+  height: 100%;
+}
+#producto1 img {
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: relative;
+  z-index: -1;
+  float: right;
+  height: auto;
+}
+}
+

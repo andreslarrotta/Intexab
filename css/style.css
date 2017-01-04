@@ -1,0 +1,584 @@
+@font-face {
+  font-family: 'Champagne & Limousines';
+  src: url("fonts/Champagne & Limousines.ttf");
+  font-weight: normal;
+  font-style: normal; }
+    @font-face {
+  font-family: 'Arabella';
+  src: url("fonts/anabella/Arabella.ttf");
+  font-weight: normal;
+  font-style: normal; }
+      @font-face {
+  font-family: 'Lauren';
+  src: url("fonts/lauren/LaurenScript.ttf");
+  font-weight: normal;
+  font-style: normal; }
+   @font-face {
+  font-family: 'sansation';
+  src: url("fonts/sansation/Sansation_Bold.ttf");
+  font-weight: normal;
+  font-style: normal; }
+body{
+	font-family: 'Champagne & Limousines';
+}
+h1 {
+  font-family: 'Champagne & Limousines';
+  text-align: center;
+  padding-top: 130px;
+  font-size: 4.75rem;
+  color: rgb(237, 203, 45);
+  position: absolute;
+  z-index: 99;
+}
+p {
+  padding: 147px 132px 0 60px;
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 22px;
+  margin-bottom: 1.25rem;
+}
+/*///////////////header*/
+/**
+ * Design Shack Respnsive Menu
+ */
+
+* {
+	padding: 0;
+	margin: 0;
+	
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  z-index: 99999999;
+  overflow: hidden;
+}
+
+nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+li {
+  font-size: 19px;
+  padding: 0;
+  margin: 0;
+  line-height: 26px;
+}
+nav li a {
+  background: #FFF;
+  border-right: 1px solid #fff;
+  color: #000;
+  display: block;
+  float: left;
+  font-family: 'sansation';
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 16%;
+  height: 76px;
+  -webkit-transition: background 0.5s ease;
+  -moz-transition: background 0.5s ease;
+  -o-transition: background 0.5s ease;
+  -ms-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+/*HOVER*/
+nav li a:hover {
+	background: rgba(0, 0, 0, 0.49);
+	color: white;
+}
+
+/*SMALL*/
+nav small {
+ font-family: 'sansation';
+	text-transform: none;
+
+}
+
+/*BORDER FIX*/
+nav li:last-child a {
+	border: none;
+}
+
+/*BLUE MENU*/
+nav .blue {
+	margin-top: 50px;
+}
+
+.blue li a {
+	background: rgba(0, 0, 0, 0.49);
+}
+}
+
+.blue small {
+	color: white;
+}
+
+.blue li a:hover {
+	background: #444;
+}
+
+/*RED MENU*/
+
+nav .red {
+	margin-top: 50px;
+}
+
+.red li a {
+	background: #5C0002;
+}
+
+.red small {
+	color: white;
+}
+
+.red li a:hover {
+	background: rgba(0, 0, 0, 0.49);
+}
+}
+
+/* MEDIA QUERIES*/
+@media only screen and (max-width : 1220px),
+only screen and (max-device-width : 1220px){
+	nav li a {
+		   font-family: 'sansation';
+	}
+	
+	nav small {
+		    font-family: 'sansation';
+	}
+}
+
+@media only screen and (max-width : 930px),
+only screen and (max-device-width : 930px){
+	nav li a {
+		width: 16%;
+		border-bottom: 1px solid #fff;
+		  font-family: 'sansation';
+	}
+	
+	nav li:last-child a, nav li:nth-child(4) a {
+		border-right: none;
+	}
+	
+	nav li:nth-child(5) a, nav li:nth-child(6) a, nav li:nth-child(7) a, nav li:nth-child(8) a {
+		border-bottom: none;
+	}
+	nav small {
+    font-family: 'sansation';
+  text-transform: none;
+  font-size: 11px;
+}
+}
+
+@media only screen and (max-width : 580px),
+only screen and (max-device-width : 580px){
+	nav {
+  width: 100%;
+  position: absolute;
+  z-index: 99999999;
+  overflow: hidden;
+}
+	nav li a {
+		  width: 100%;
+		     font-family: 'sansation';
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	#menu3{
+		width: 100%;
+	}
+	#menu7{
+		display: none;
+	}
+	
+	nav li:nth-child(even) a {
+		border-right: none;
+	}
+	
+	nav li:nth-child(5) a, nav li:nth-child(6) a {
+		border-bottom: 1px solid #fff;
+	}
+}
+
+@media only screen and (max-width : 320px),
+only screen and (max-device-width : 320px){
+	nav li a {
+		  font-family: 'sansation';
+	}
+}
+
+/*/////////////////////////header*/
+.mainSeccion {
+  width: 100%;
+  margin: 0 auto;
+}	
+.background{
+	width: 100%;
+	height:100%;
+}
+/*SECCION HOME*/
+#indicador1{
+    width: 100%;
+  position: absolute;
+  bottom: 71px;
+}
+#indicador1 img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  width: 6%;
+}
+#logo {
+  background: url(../img/logo.png) no-repeat center;
+  position: relative;
+  top: -56px;
+  right: 0;
+}
+#triangulos{
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 99;
+  background: url(../img/triangulosHome.png) no-repeat;
+  width: 100%;
+  background-size: 100% 100%;
+  height: 100%;
+}
+.seccion1{}
+#menuinferior {
+  background: rgb(248, 214, 79);
+  width: 100%;
+  bottom: 0;
+  height: 7%;
+  position: fixed;
+  -webkit-transition: height 1s;
+  -moz-transition: height 1s;
+  -o-transition: height 1s;
+
+}
+#menuinferior:hover{
+  background: rgb(248, 214, 79);
+  width: 100%;
+  bottom: 0;
+  height: 18%;
+  position: fixed;
+}
+#decoracion {  width: 100%;
+  height: 50px;
+  background: url(../img/barramenuinferior.jpg);
+  background-size: 100% 100%;
+}
+#decoracion li {
+  font-size: 19px;
+  padding: 0;
+  margin: 0;
+  line-height: 26px;
+  float: left;
+  margin-right: 5px;
+   margin-left: 3%;
+}
+#decoracion ul{
+  list-style-type: square;
+  padding-top: 60px;
+}
+#redessocialess {
+  width: 237px;
+  position: absolute;
+  right: 0;
+  top: 65px;
+}
+#redessocialess img{
+  width: 16%;
+}
+#home {
+  width: 100%;
+  /*background: url(../img/backgroundHOme.png) center center no-repeat;*/
+  background-size: 100% 100%;
+  height: 100%;
+}
+
+/*SECCION NUESTRA EMPRESA*/
+
+
+#triangulosseccion1{
+	position: absolute;
+	background:url(../img/triangulosSeccion1.png) no-repeat;
+	background-size: 100% 100%;
+}
+#triangulosnegros{
+	left: 0;
+	position: absolute;
+	background:url(../img/backgroundSeccion1.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.seccion2{
+
+}
+#NuestraEmpresa{
+	width: 100%;
+	background: url(../img/backgroundvision.png) center center no-repeat;
+	background-size: 100% 100%;
+	height: 100%;
+}
+
+
+/*SECCION NUESTRA EMPRESA2*/
+.seccion3 {
+  width: 100%;
+  background: url(../img/BakcgroundSeccion2.png) center center no-repeat fixed;
+  background-size: 100% 100%;
+ height: 1766px;
+}
+.textos {
+  background: rgba(237, 203, 45, 0.72);
+  width: 50%;
+  margin: 0 auto;
+  height: 300px;
+  -webkit-transition: background 1s;
+  -moz-transition: background 1s;
+  -o-transition: background 1s; 
+}
+.textos:hover {
+  background: rgba(237, 203, 45, 1);
+  width: 100%;
+  margin: 0 auto;
+  height: 300px;
+  padding: 0 25% 0 25%;
+}
+#NuestraEmpresa2 p {
+  padding: 55px 0 0 0;
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 25px;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+}
+#texto2{
+margin-top: 100px;
+}
+#texto3{
+margin-top: 100px;
+}
+#texto4{
+margin-top: 100px;
+}
+
+
+/*SECCION NUESTRA EMPRESA3*/
+#NuestraEmpresa3{
+	width: 100%;
+	background: url(../img/backgroundvision.png) center center no-repeat fixed;
+	background-size: 100% 100%;
+	height: 100%;
+
+}
+#misionvision h1 {
+  font-family: 'Champagne & Limousines';
+  text-align: center;
+  padding-top: 188px;
+  position: inherit;
+  color: rgb(220, 187, 42);
+}
+#misionvision p {
+   font-family: 'Champagne & Limousines';
+  text-align: center;
+  position: inherit;
+  z-index: 99;
+  font-size: 17px;
+  padding: 0;
+  color: rgb(231, 211, 86);
+}
+#triangulosseccion4{
+	position: absolute;
+	background:url(../img/vision.png) no-repeat;
+	background-size: 100% 100%;
+	z-index: 99;
+}
+#triangulosnegrosseccion4{
+	left: 0;
+	position: absolute;
+	z-index: 99;
+	background:url(../img/backgroundvisiondelnte.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+/*SECCION 5*/
+.seccion5{
+	width: 100%;
+	background: url(../img/efecto2.png) no-repeat fixed;
+	background-size: 100% 100%;
+	height: 100%;
+}
+#persiana{
+	position: absolute;
+	background:url(../img/efecto1.png) no-repeat;
+	background-size: 100% 100%;
+	z-index: 99;
+}
+/*SECCION 6*/
+#listaProductos h2 {
+  font-family: 'Champagne & Limousines';
+  text-align: center;
+  font-size: 2.3125rem;
+  padding: 40px 0 0 0;
+  background: rgba(0, 0, 0, 0.31);
+  height: 100%;
+  color: white;
+}
+.seccion6{
+	width: 100%;
+	background: rgb(237, 240, 241);
+	background-size: 100% 100%;
+	height: 600px;
+	-webkit-transition: height 1s;
+  -moz-transition: height 1s;
+  -o-transition: height 1s;
+}
+.menu{
+	width: 100%;
+	height: 200px;
+	border: 2px solid white;
+	-webkit-transition: height 1s; 
+  -moz-transition: height 1s;
+  -o-transition: height 1s;
+}
+.menu:hover{
+	height: 300px;
+	background-size: 100%;
+}
+.seccion6:hover{
+	height: 700px;
+}
+#cortinas{
+	background:url(../img/cotinas.jpg) center center no-repeat;
+	background-size:100% 100%; 
+}
+#paneles{
+	background: url(../img/paneles.jpg) center center no-repeat;
+	background-size:100% 100%; 
+}
+#tradicional{
+	background: url(../img/linea.jpg) center center no-repeat;
+	background-size:100% 100%; 
+}
+/*SECCION CONTACTO*/
+#video {
+  position: fixed;
+  right: 0;
+  z-index: -9;
+  /* width: 100%; */
+  /* height: 100%; */
+}
+#triangulocontacto{
+	width: 100%;
+	left: 0;
+	position: absolute;
+	background:url(../img/backgroundvisiondelnte.png) no-repeat;
+	background-size: 100% 100%;
+}
+.seccion7 {
+  width: 100%;
+  background-size: 100% 100%;
+}
+#formulario {
+  padding-top: 177px;
+  color: white;
+}
+@media only screen and (max-width : 581px){
+#formulario {
+  padding-top: 496px;
+  color: white;
+}
+.seccion7 {
+  width: 100%;
+  background-size: 100% 100%;
+  height: 1464px;
+  background: url(../img/poster.png);
+}
+}
+.button{
+	font-family: 'Champagne & Limousines';
+	width: 100%;
+	border-width: 4px;
+	border-color: #cccccc;
+	background-color: rgba(0, 0, 0, 0.21);
+}
+.button:hover{
+	width: 100%;
+	border-width: 4px;
+	border-color: #cccccc;
+	background-color: #E7D356;
+	color: black;
+}
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.28);
+  font-family: inherit;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #cccccc;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-size: 0.875rem;
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+  height:  3.3125rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: all 0.15s linear;
+}
+input, input[type="password" i], input[type="search" i] {
+  -webkit-appearance: textfield;
+   -moz-appearance: textfield;
+  -o-appearance: textfield;
+  padding: 1px;
+  background-color: red;
+}
+
+input[type="submit"] {
+  font-family: 'Champagne & Limousines';
+  font-size: 39px;
+  -webkit-appearance: none;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.19);
+  color: white;
+  width: 100%;
+  height: 50px;
+  border-bottom-style: solid;
+  border-color: white;
+}
+input[type="submit"]:hover {
+  -webkit-appearance: none;
+  border-radius: 0;
+  background-color: #E7D356;
+  color: black;
+  width: 100%;
+  height: 50px;
+  border-bottom-style: solid;
+  border-color: white;
+}
+
+
+
+/*////////////////////////SECCION PRODUCTOS/////////////////////*/
+
+
+
+
+/*////////////////////////SECCION PRODUCTOS/////////////////////*/
+
+
